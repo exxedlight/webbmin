@@ -1,0 +1,118 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.MAINDIV{
+    width: 99%;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+header{
+    height: 15%;
+    width: 100%;
+    background: linear-gradient(45deg, #c31432, #240b36);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    color: whitesmoke;
+    font-family: 'Blaka', cursive;
+    font-size: 90px;
+    text-align: center;
+}
+.maincontent{
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(90deg, #485563, #29323c);
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+footer{
+    height: 5%;
+    width: 100%;
+    color: whitesmoke;
+    background: linear-gradient(-45deg, #c31432, #240b36);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    text-align: center;
+    font-family: 'Blaka', cursive;
+    font-size: 30px;
+}
+
+.VectorForm{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.TextMainItemH{
+    color: white;
+    height: 10%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+.TextMainItemP{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 22%;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+}
+.UserInput{
+    width: 70%;
+    height: 15%;
+    align-self: center;
+}
+.ButtonsChoose{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.TextAreaResult{
+    width: 80%;
+    height: 70%;
+    align-self: center;
+}
+button.Button{
+    margin-top: 20px;
+    width: 30%;
+    height: 70%;
+    align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background: linear-gradient(45deg, #c31432, #240b36);
+    background-size: 200% 200%;
+    color: whitesmoke;
+    animation: gradient 3s ease infinite;
+}
+button.Button:hover{
+    background: linear-gradient(-45deg, #c31432, #240b36);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+a{
+    color: whitesmoke;
+}
+
+@keyframes gradient{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}

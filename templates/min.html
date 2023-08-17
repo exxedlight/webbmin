@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="ANSII">
+    <link rel="stylesheet" href="static/stylevector.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>WEBBMIN</title>
+</head>
+<body>
+<div class="MAINDIV">
+<header>
+    <a href="{{ url_for('mainpage') }}">WEBBMIN</a>
+</header>
+<div class="maincontent">
+    <h1 class="TextMainItemH">Result page</h1>
+    <textarea class="TextAreaResult" name="result_name">{{result_name_data}}</textarea>
+</div>
+<footer>
+    Boolean signals minimizer
+</footer>
+</div>
+</body>
+</html>

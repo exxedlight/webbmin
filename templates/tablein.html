@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="ANSII">
+    <link rel="stylesheet" href="static/styletable.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>WEBBMIN</title>
+</head>
+<body>
+<div class="MAINDIV">
+<header>
+    <a href="{{ url_for('mainpage') }}" class="TitleHead">WEBBMIN</a>
+</header>
+<div class="maincontent">
+    <h1 class="TextMainItemH">Table input page</h1>
+    <form class="TableForm" method="POST" action="/tablecreate">
+        <p class="TextMainItemP">There are a field to print a signals number(less that 20) and press a button ``CREATE``</p>
+        <p class="TextMainItemP">Tool will create a full-table for this signals numbers and you may to edit a function with printing a 0 or 1</p>
+        <p class="TextMainItemP">After entering, please, press a button down the page. Make sure that your table has only a correct data! You can delete some sets, but don`t damage it`s form!</p>
+        <div class="InputsBlock">
+            <div>
+            <input placeholder="N" class="UserInput1" name="user_N"></input><button class="Button">Create table</button>
+            </div>
+        </div>
+    </form>
+</div>
+<footer>
+    Boolean signals minimizer
+</footer>
+</div>
+</body>
+</html>

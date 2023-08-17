@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="ANSII">
+    <link rel="stylesheet" href="static/stylemain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>WEBBMIN</title>
+</head>
+<body>
+<div class="MAINDIV">
+<header>
+    WEBBMIN
+</header>
+<div class="maincontent">
+    <div class="TextMain">
+        <h1 class="TextMainItemH">Hello, dear user!</h1>
+        <p class="TextMainItemP">This is my own created minimizer for boolean functions! Am I right, that process of minimization is difficult and takes so much time? Can`t find a minimizer because all of them incomprehensible? You on the right way!</p>
+        <p class="TextMainItemP">My tool may help you to minimize functions used in computer logic and schemotechnic in few seconds. Just put your function in comfort to you form and let's go :)</p>
+        <p class="TextMainItemP">The algorythm used here is adapted Kvain minimization algorythm, this tool can minimize functions less that 20 signals! Make sure that you put a correct data in it, otherwise it can`t do anything. Read a tips for use in every step. Make you work faster^^</p>
+        <p class="TextMainItemP">Please, choose a form of putting function in the minimizer. Table form will create a full signals combinations table, vector form will ask you to print a numbers of signal sets DDNF-form of function</p>
+    </div>
+    <div class="ButtonsChoose">
+        <button class="Button"><a class="Button" href={{ url_for('tablein') }}>Table Form</a></button>
+        <button class="Button"><a class="Button" href={{ url_for('vectorin') }}>Vector Form</a></button>
+    </div>
+</div>
+<footer>
+    Boolean signals minimizer
+</footer>
+</div>
+</body>
+</html>
